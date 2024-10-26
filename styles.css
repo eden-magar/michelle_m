@@ -1,0 +1,75 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif; /* סוג הגופן */
+    margin: 0; /* הסרת רווחים */
+    padding: 0; /* הסרת רווחים */
+    background-color: #A0D8E3; /* צבע הרקע בגווני Baby Blue */
+    color: #0000FF; /* צבע הטקסט כחול */
+    text-align: center; /* מרכז את הטקסט בדף */
+    display: flex; /* שימוש ב-Flexbox */
+    flex-direction: column; /* סידור התוכן בעמודה */
+    min-height: 100vh; /* גובה מינימלי של 100% מגובה החלון */
+}
+
+header {
+    background-color: #A0D8E3; /* צבע הרקע של ההדר */
+    color: #0000FF; /* צבע הטקסט */
+    padding: 10px 0; /* רווח פנימי */
+}
+
+nav {
+    margin: 20px 0; /* רווח סביב הניווט */
+}
+
+nav a {
+    color: #0000FF; /* צבע הקישורים כחול */
+    padding: 10px; /* רווח סביב הקישורים */
+    text-decoration: none; /* הסרת קו תחתון */
+}
+
+nav a:hover {
+    background-color: #B2EBF2; /* צבע הרקע של הקישור בה.hover */
+}
+
+main {
+    padding: 20px; /* רווח פנימי */
+    flex-grow: 1; /* מרחיב את ה-main כדי למלא את החלל הפנוי */
+}
+
+h2 {
+    color: #0000FF; /* צבע כותרות כחול */
+}
+
+footer {
+    text-align: center; /* טקסט מרכזי */
+    padding: 10px; /* רווח פנימי */
+    background-color: #A0D8E3; /* צבע הרקע של הפוטר */
+    color: #0000FF; /* צבע הטקסט */
+}
+
+/* מסלול ותחרויות הצבים */
+#track {
+    position: relative; /* מאפשר לצבים לנוע יחסית למסלול */
+    width: 80%; /* רוחב המסלול */
+    height: 400px; /* גובה המסלול */
+    margin: 20px auto; /* מרכז את המסלול */
+    border: 2px solid #0000FF; /* גבול המסלול */
+    background-color: #E0F7FA; /* צבע רקע למסלול */
+}
+
+.turtle {
+    position: absolute; /* מאפשר לנוע בעזרת left */
+    width: 50px; /* רוחב הצב */
+    height: 30px; /* גובה הצב */
+    border-radius: 5px; /* עיגול הפינות */
+}
+
+/* מיקום הצבים בטור */
+.turtle:nth-child(1) { top: 0; }
+.turtle:nth-child(2) { top: 50px; } /* רווח של 50 פיקסלים בין צב לצב */
+.turtle:nth-child(3) { top: 100px; }
+.turtle:nth-child(4) { top: 150px; }
+.turtle:nth-child(5) { top: 200px; }
+.turtle:nth-child(6) { top: 250px; }
+.turtle:nth-child(7) { top: 300px; }
+.turtle:nth-child(8) { top: 350px; }
